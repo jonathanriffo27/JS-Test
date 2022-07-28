@@ -1,0 +1,46 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  position: relative;
+  height: 56px;
+}
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 188, 199);
+  padding-left: 20px;
+  padding-top: 18px;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 6%;
+  transform: translateY(-50%);
+  color: rgb(141, 140, 143);
+  font-weight: 300;
+}
+input:focus {
+  outline: none;
+  background: #e5e9f1;
+  border-color: rgb(185, 188, 199);
+}
+input:focus + label,
+input:valid + label {
+  transform: translateY(-105%) translateX(-8%) scale(0.8);
+  color: rgb(149, 150, 153);
+}
